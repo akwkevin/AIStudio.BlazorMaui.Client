@@ -1,10 +1,11 @@
-﻿@inherits LayoutComponentBase
+﻿@namespace AIStudio.Blazor.Common
+@inherits LayoutComponentBase
 
 <AntDesign.ProLayout.BasicLayout 
     Logo="@("https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg")"
     MenuData="_menuData">
     <RightContentRender>
-        <AntDesignApp.Components.RightContent />
+        <AIStudio.Blazor.Common.Components.RightContent />
     </RightContentRender>
     <ChildContent>
         @Body

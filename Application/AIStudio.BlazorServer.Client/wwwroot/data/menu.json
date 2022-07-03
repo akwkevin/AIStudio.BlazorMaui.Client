@@ -7,6 +7,11 @@
     "children": [
       {
         "path": "/",
+        "name": "Hello World",
+        "key": "hello.world"
+      },
+      {
+        "path": "/analysis",
         "name": "Analysis Page",
         "key": "dashboard.analysis"
       },
