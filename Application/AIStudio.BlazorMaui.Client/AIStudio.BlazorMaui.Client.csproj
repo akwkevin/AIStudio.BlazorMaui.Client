@@ -53,4 +53,10 @@
 	  <ProjectReference Include="..\..\AIStudio.Blazor.Common\AIStudio.Blazor.Common.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Content Update="wwwroot\data\menu.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
 </Project>

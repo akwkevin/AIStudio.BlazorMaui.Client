@@ -1,5 +1,6 @@
 ﻿using AIStudio.Blazor.Common.Data;
 using AIStudio.Blazor.Common.ServiceExtensions;
+using Microsoft.AspNetCore.Components;
 
 namespace AIStudio.BlazorMaui.Client
 {
@@ -21,7 +22,10 @@ namespace AIStudio.BlazorMaui.Client
 #endif
 
             builder.Services.AddSingleton<WeatherForecastService>();
-
+            builder.Services.AddScoped(sp => new HttpClient
+            {
+                BaseAddress = new Uri(sp.GetService<NavigationManager>().BaseUri)
+            });
             builder.Services.AddServiceSetup();    // 第2外：添加扩展方法引入Masa Blazor
 
             return builder.Build();

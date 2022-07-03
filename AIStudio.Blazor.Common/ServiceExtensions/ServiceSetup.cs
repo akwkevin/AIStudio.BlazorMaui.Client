@@ -13,7 +13,7 @@ namespace AIStudio.Blazor.Common.ServiceExtensions
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
-            services.AddMasaBlazor();   // 这句关键代码
+            services.AddAntDesign();   // 这句关键代码
         }
     }
 }
